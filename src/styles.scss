@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "styles/tailwind.css";
+@use '@angular/material' as mat;
+@use 'styles/style-theme-colors.scss' as colors;
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    /* @include mat.theme((color: colors.$primary-palette, */
+    @include mat.theme((color: mat.$red-palette,
+            typography: Roboto,
+            density: 0));
+}
+
+html {
+    color-scheme: light;
+}
+
+html.dark {
+    color-scheme: dark;
+}
