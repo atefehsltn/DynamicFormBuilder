@@ -1,3 +1,4 @@
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { FormElementsMenuComponent } from './components/form-elements-menu/form-elements-menu.component';
@@ -6,7 +7,7 @@ import { FieldSettingsComponent } from './components/field-settings/field-settin
 
 @Component({
   selector: 'app-root',
-  imports: [MatButtonModule,FormElementsMenuComponent,MainCanvasComponent,FieldSettingsComponent],
+  imports: [MatButtonModule,FormElementsMenuComponent,MainCanvasComponent,FieldSettingsComponent,DragDropModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
