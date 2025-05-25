@@ -10,7 +10,11 @@ import { Component } from '@angular/core';
 export class FormEditorComponent {
 
   onDropInRow(event: CdkDragDrop<string>) {
-
+    console.log(event);
+    if(event.previousContainer.data === 'field-selector'){
+      //Add our field to the row
+      return;
+    }
   }
 
 }
