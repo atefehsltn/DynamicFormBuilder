@@ -4,13 +4,21 @@ import { FieldTypeDefinition } from '../models/field';
 const TEXT_FIELD_DEFINITION = {
   type: 'text',
   label: 'Text Field',
-  icon: 'text_fields'
+  icon: 'text_fields',
+  defaultConfig: {
+    label: 'Text Field',
+    required: false
+  }
 }
 
 const CHECKBOX_FIELD_DEFINITIOM = {
   type: 'checkbox',
   label: 'Checkbox',
-  icon: 'check_box'
+  icon: 'check_box',
+  defaultConfig: {
+    label: 'Checkbox',
+    required: false
+  }
 }
 
 @Injectable({
